@@ -6,6 +6,9 @@ env:
     PASSWORD: PASSWORD
 
 phases:
+  install:
+    runtime-versions:
+      python: 3.10
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
