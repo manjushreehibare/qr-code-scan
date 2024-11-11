@@ -8,7 +8,7 @@ env:
 phases:
   install:
     runtime-versions:
-      python: 3.10
+      node: 18
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
@@ -33,5 +33,5 @@ phases:
 
 artifacts:
   files: 
-    - 'api/imagedefinitions.json'
+    - 'front-end-nextjs/imagedefinitions.json'
   discard-paths: yes
