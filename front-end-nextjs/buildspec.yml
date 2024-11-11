@@ -8,7 +8,7 @@ env:
 phases:
   install:
     runtime-versions:
-      node: 18
+      nodejs: 18
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
