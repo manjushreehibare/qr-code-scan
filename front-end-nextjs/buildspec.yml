@@ -28,7 +28,7 @@ phases:
       - docker push $REPOSITORY_URI:demo-latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      - echo "[{\ "name\ ":\ "frontend-container\ ",\ "imageUri\ ":\ "$IMAGE_URI\ "}]" 381491838685.dkr.ecr.ap-south-1.amazonaws.com/front-end-nextjs:demo-latest > imagedefinitions.json
+      - echo "[{\"name\":\"frontend-container\",\"imageUri\":\"$IMAGE_URI\"}]" 381491838685.dkr.ecr.ap-south-1.amazonaws.com/front-end-nextjs:demo-latest > imagedefinitions.json
 artifacts:
   files: 
     - 'front-end-nextjs/imagedefinitions.json'
